@@ -74,10 +74,11 @@ public class HangManController {
             dashes = newDash;
         }
         if(dashes.equals(word)){
-            outputWin.setText("YOU WIN! The word was : " + word);
+            outputWin.setText("YOU WIN! The word was : " + word.toUpperCase());
             guessButton.setDisable(true);
             guessInput.setDisable(true);
             playAgainButton.setVisible(true);
+            outputText.setText(" ");
         }
 
         if(guessCount == 7){
