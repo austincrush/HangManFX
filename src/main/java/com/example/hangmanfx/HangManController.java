@@ -44,7 +44,6 @@ public class HangManController {
     public Text outputWrongLetters;
 
     public String wrongLetters = "Wrong Guesses: ";
-
     private String word = words[(int) (Math.random() * words.length)];
     private String dashes = new String(new char[word.length()]).replace("\0", "_");
     private int guessCount = 0;
